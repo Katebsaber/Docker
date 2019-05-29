@@ -1,2 +1,3 @@
 # Docker
-Docker files and compose
+Docker files, images and compose
+

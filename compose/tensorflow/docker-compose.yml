@@ -1,0 +1,13 @@
+version: '2.3'
+
+services:
+    tensorflow:
+        image: tensorflow/tensorflow:2.0.0a0-gpu-py3-jupyter
+        runtime: nvidia
+        volumes:
+          - /tfdata:/tf
+        ports:
+          - 8888:8888
+        restart: always
+
+

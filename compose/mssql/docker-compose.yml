@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    hostname: mssql
+    ports:
+      - "1433:1433"
+    environment:
+      - "ACCEPT_EULA=Y"
+      - "SA_PASSWORD=Pricem@ster1"
+    volumes:
+      - mssql-data:/var/opt/mssql
+    restart: always
+
+volumes:
+  mssql-data:
