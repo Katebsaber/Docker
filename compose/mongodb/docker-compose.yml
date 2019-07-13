@@ -9,7 +9,7 @@ services:
     image: "mongo:latest"
 
     volumes:
-      - /var/mongo/data:/data/db
+      - ~/docker_data/mongo/data:/data/db
     
     ports:
       - "27018:27017"

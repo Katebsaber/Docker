@@ -9,7 +9,7 @@ services:
       - "ACCEPT_EULA=Y"
       - "SA_PASSWORD=Pricem@ster1"
     volumes:
-      - mssql-data:/var/opt/mssql
+      - ~/docker_data/mssql-data:/var/opt/mssql
     restart: always
 
 volumes:
