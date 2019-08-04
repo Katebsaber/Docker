@@ -1,0 +1,12 @@
+version: '2.3'
+
+services:
+    influx:
+        image: influxdb
+        volumes:
+          - ~/docker_data/influx_data:/var/lib/influxdb
+        ports:
+          - 8086:8086
+        restart: always
+
+

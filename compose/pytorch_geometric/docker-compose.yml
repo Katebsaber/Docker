@@ -1,0 +1,13 @@
+version: '2.3'
+
+services:
+    pytorch:
+        image: pytorch_geometric
+        runtime: nvidia
+        volumes:
+          - ~/docker_data/pytorch_geometric_data:/workspace
+        ports:
+          - 8088:8888
+        restart: always
+
+

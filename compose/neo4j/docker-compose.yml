@@ -1,0 +1,18 @@
+version: '2.3'
+
+services:
+    neo4j:
+        image: neo4j:latest
+        volumes:
+          - ~/docker_data/neo4j/data:/data
+          - ~/docker_data/neo4j/logs:/logs 
+          - ~/docker_data/neo4j/import:/var/lib/neo4j/import
+          - ~/docker_data/neo4j/plugins:/plugins
+        environment:
+          - NEO4J_AUTH=neo4j/faza
+        ports:
+          - 7474:7474
+          - 7687:7687
+        restart: always
+
+
